@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WAKAKO TANIGUCHI | Portfolio</title>
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Noto+Sans+JP:wght@300;400;500;700&display=swap" rel="stylesheet">
+  
+  <!-- GLightbox CSS (モーダル表示用) -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css">
+  
+  <!-- カスタムCSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ヘッダー -->
+  <header class="header">
+    <div class="header-container">
+      <a href="#" class="logo">WAKAKO TANIGUCHI</a>
+      <nav class="nav">
+        <ul class="nav-list">
+          <li><a href="#works">Works</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <!-- スマホ用ハンバーガーボタン -->
+      <button class="burger-btn" id="burgerBtn" aria-label="メニューを開く">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- ヒーローセクション -->
+    <section class="hero">
+      <div class="hero-container">
+        <div class="hero-text">
+          <h1>Portfolio</h1>
+        </div>
+        <div class="hero-image">
+          <img src="images/hyousi.jpg">
+        </div>
+      </div>
+    </section>
+
+    <!-- Works セクション -->
+    <section id="works" class="section works-section">
+      <div class="container">
+        <h2 class="section-title">Works</h2>
+        
+        <!-- Works category filters -->
+        <div class="filter-buttons">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="web">Webdesign</button>
+          <button class="filter-btn" data-filter="graphic">Graphicdesign</button>
+          <button class="filter-btn" data-filter="package">Packagedesign</button>
+        </div>
+
+        <div class="grid grid-3 works-grid">
+          
+          <!-- 展示写真 -->
+          <article class="design work-item" data-category="graphic">
+            <a href="work.html?id=photo-design">
+              <div class="design-img">
+                <img src="images/girliephoto.png" alt="展示写真">
+              </div>
+              <div class="design-info">
+                <h3>Photo Design</h3>
+                <p>展示写真</p>
+              </div>
+            </a>
+          </article>
+
+          <!-- 展示ポスター -->
+          <article class="design work-item" data-category="graphic">
+            <a href="work.html?id=poster-design">
+              <div class="design-img">
+                <img src="images/girlieleboul.png" alt="展示ポスター">
+              </div>
+              <div class="design-info">
+                <h3>Poster Design</h3>
+                <p>展示ポスター</p>
+              </div>
+            </a>
+          </article>
+
+          <!-- 展示ポストカード -->
+          <article class="design work-item" data-category="graphic">
+            <a href="work.html?id=postcard-design">
+              <div class="design-img">
+                <img src="images/tabako.png" alt="展示ポストカード">
+              </div>
+              <div class="design-info">
+                <h3>Postcard Design</h3>
+                <p>展示ポストカード</p>
+              </div>
+            </a>
+          </article>
+
+          <!-- 名刺デザイン -->
+          <article class="design work-item" data-category="graphic">
+            <a href="work.html?id=business-design">
+              <div class="design-img">
+                <img src="images/名刺1.png" alt="名刺デザイン">
+              </div>
+              <div class="design-info">
+                <h3>Business Design</h3>
+                <p>名刺デザイン</p>
+              </div>
+            </a>
+          </article>
+
+                    <!-- 名刺デザイン2 -->
+          <article class="design work-item" data-category="graphic">
+            <a href="work.html?id=business-design2">
+              <div class="design-img">
+                <img src="images/名刺2.png" alt="名刺デザイン2">
+              </div>
+              <div class="design-info">
+                <h3>Business Design2</h3>
+                <p>名刺デザイン2</p>
+              </div>
+            </a>
+          </article>
+
+                                                  <!-- 卵パッケージ -->
+          <article class="design work-item" data-category="package">
+            <a href="work.html?id=egg-package">
+              <div class="design-img">
+                <img src="images/egg.png" alt="卵パッケージ">
+              </div>
+              <div class="design-info">
+                <h3>egg package</h3>
+                <p>卵パッケージ</p>
+              </div>
+            </a>
+          </article>
+
+                              <!--旅行 -->
+          <article class="design work-item" data-category="web">
+            <a href="work.html?id=web-design">
+              <div class="design-img">
+                <img src="images/hearing.png" alt="旅行記録ウェブサイト">
+              </div>
+              <div class="design-info">
+                <h3>Hearing journey Website</h3>
+                <p>旅行記録ウェブサイト</p>
+              </div>
+            </a>
+          </article>
+
+                                                            <!-- 雑誌1 -->
+          <article class="design work-item" data-category="package">
+            <a href="work.html?id=magazine-design">
+              <div class="design-img">
+                <img src="images/雑誌1.png" alt="雑誌デザイン">
+              </div>
+              <div class="design-info">
+                <h3>Magazine Design</h3>
+                <p>雑誌デザイン1</p>
+              </div>
+            </a>
+          </article>
+
+                                                                      <!-- 雑誌2　-->
+          <article class="design work-item" data-category="package">
+            <a href="work.html?id=magazine-design2">
+              <div class="design-img">
+                <img src="images/雑誌2.jpeg" alt="雑誌デザイン">
+              </div>
+              <div class="design-info">
+                <h3>Magazine Design</h3>
+                <p>雑誌デザイン2</p>
+              </div>
+            </a>
+          </article>
+
+                              <!--ホルモン擬人化キャラクター -->
+          <article class="design work-item" data-category="graphic">
+            <a href="work.html?id=horumon-design">
+              <div class="design-img">
+                <img src="images/horumon.png" alt="ホルモン擬人化キャラクター">
+              </div>
+              <div class="design-info">
+                <h3>Horumon Design</h3>
+                <p>ホルモン擬人化キャラクター</p>
+              </div>
+            </a>
+          </article>
+                    <!-- トランプカード -->
+          <article class="design work-item" data-category="graphic">
+            <a href="work.html?id=trump-design">
+              <div class="design-img">
+                <img src="images/trump.png" alt="トランプカード">
+              </div>
+              <div class="design-info">
+                <h3>Trump Design</h3>
+                <p>トランプカード</p>
+              </div>
+            </a>
+          </article>
+
+                    <!-- お天気マーク -->
+          <article class="design work-item" data-category="graphic">
+            <a href="work.html?id=weather-design">
+              <div class="design-img">
+                <img src="images/weather.gif" alt="お天気マーク">
+              </div>
+              <div class="design-info">
+                <h3>weather mark</h3>
+                <p>お天気マーク</p>
+              </div>
+            </a>
+          </article>
+
+                              <!-- クリスマスポスター -->
+          <article class="design work-item" data-category="graphic">
+            <a href="work.html?id=christmas-design">
+              <div class="design-img">
+                <img src="images/xmas.png" alt="クリスマスポスター">
+              </div>
+              <div class="design-info">
+                <h3>christmas poster</h3>
+                <p>クリスマスポスター</p>
+              </div>
+            </a>
+          </article>
+
+                              <!-- いちごロールパッケージ -->
+          <article class="design work-item" data-category="package">
+            <a href="work.html?id=strawberry-roll-design">
+              <div class="design-img">
+                <img src="images/いちご.png" alt="いちごロールパッケージ">
+              </div>
+              <div class="design-info">
+                <h3>strawberry roll package</h3>
+                <p>いちごロールパッケージ</p>
+              </div>
+            </a>
+          </article>
+
+
+                              <!-- アルテリアロゴ -->
+          <article class="design work-item" data-category="graphic">
+            <a href="work.html?id=aruteria-design">
+              <div class="design-img">
+                <img src="images/aruteri.png" alt="アルテリアロゴ">
+              </div>
+              <div class="design-info">
+                <h3>aruteria logo</h3>
+                <p>アルテリアロゴ</p>
+              </div>
+            </a>
+          </article>
+
+
+                              <!--ジュースパッケージ -->
+          <article class="design work-item" data-category="package">
+            <a href="work.html?id=juice-package">
+              <div class="design-img">
+                <img src="images/juice.png" alt="ジュースパッケージ">
+              </div>
+              <div class="design-info">
+                <h3>juice package</h3>
+                <p>ジュースパッケージ</p>
+              </div>
+            </a>
+          </article>
+
+                                        <!-- ふみえwebsite-->
+          <article class="design work-item" data-category="web">
+            <a href="work.html?id=humie-website">
+              <div class="design-img">
+                <img src="images/humie.png" alt="ふみえwebsite">
+              </div>
+              <div class="design-info">
+                <h3>humie website</h3>
+                <p>ふみえwebsite</p>
+              </div>
+            </a>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- About セクション -->
+    <section id="about" class="section about-section">
+      <div class="container">
+        <h2 class="section-title">About</h2>
+        <div class="about-content">
+          <div class="about-text">
+            <h3>谷口 和歌子 / WAKAKO TANIGUCHI</h3>
+            <p>
+              九州産業大学芸術学部ソーシャルデザイン学科3年在学中。
+            </p>
+            <p>
+              グラフィックデザイン、Webデザイン、写真撮影を中心に活動しています。
+            </p>
+            <p>
+              全てのデザインに可愛さとときめきを感じてほしい！Webデザイン、グラフィックデザイン、写真撮影を通じて、視覚的な魅力を追求した作品を制作しています。
+            </p>
+          </div>
+          <div class="about-avatar">
+            <img src="images/若.JPG" alt="WAKAKO TANIGUCHI">
+          </div>
+        </div>
+
+        <div class="btn-wrapper">
+          <a href="#contact" class="btn-more">more</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact セクション -->
+    <section id="contact" class="section contact-section">
+      <div class="container">
+        <h2 class="section-title">Contact</h2>
+        <div class="contact-box">
+          <p class="contact-lead">作品に関するお問い合わせはこちらから承っております。</p>
+          <a href="mailto:example@example.com" class="btn-contact">お問い合わせはこちら</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- フッター -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-logo">WAKAKO TANIGUCHI</div>
+      <nav class="footer-nav">
+        <ul>
+          <li><a href="#works">works</a></li>
+          <li><a href="#about">about</a></li>
+          <li><a href="#contact">contact</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="copyright">
+      <small>&copy; WARAKO TANIGUCHI All Rights Reserved.</small>
+    </div>
+  </footer>
+
+  <!-- GLightbox JS (モーダル用ライブラリ) -->
+  <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+  <!-- カスタムJS -->
+  <script src="script.js"></script>
+</body>
+</html>

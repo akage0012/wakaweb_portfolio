@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Works | WAKAKO TANIGUCHI</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Noto+Sans+JP:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+  <!-- GLightbox CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ヘッダー（リンクは index.html を経由させる） -->
+  <header class="header">
+    <div class="header-container">
+      <a href="index.html" class="logo">WAKAKO TANIGUCHI</a>
+      <nav class="nav">
+        <ul class="nav-list">
+          <li><a href="index.html#works">Works</a></li>
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <button class="burger-btn" id="burgerBtn" aria-label="メニューを開く">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- 作品の内容は work.js が WORKS データから自動で書き込みます -->
+    <article class="work-detail" id="workDetail"></article>
+  </main>
+
+  <!-- フッター -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-logo">WAKAKO TANIGUCHI</div>
+      <nav class="footer-nav">
+        <ul>
+          <li><a href="index.html#works">works</a></li>
+          <li><a href="index.html#about">about</a></li>
+          <li><a href="index.html#contact">contact</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="copyright">
+      <small>&copy; WAKAKO TANIGUCHI All Rights Reserved.</small>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+  <!-- 順番に注意: データ → 描画 → 共通JS（GLightboxは描画後に初期化したい） -->
+  <script src="workdata.js"></script>
+  <script src="work.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
